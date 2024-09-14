@@ -1,0 +1,36 @@
+.Botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+  gap: 10px; /* Separación entre botones */
+  margin: 20px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+button.operacion {
+  background-color: orange;
+  color: white;
+}
+
+button.zero {
+  grid-column: span 2; /* Ocupa el ancho de dos columnas */
+}
+
+button.igual {
+  background-color: green;
+  color: white;
+  grid-column: span 4; /* Ocupa toda la fila */
+}
+
+button:active {
+  transform: scale(0.95);
+  background-color: #ddd;
+}

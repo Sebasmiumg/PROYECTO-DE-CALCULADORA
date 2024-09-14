@@ -1,0 +1,104 @@
+/* Estilo general para una tipografía moderna */
+body {
+  font-family: 'Roboto', sans-serif; /* Fuente clara similar a la de Apple */
+  background-color: #F5F5F5; /* Fondo claro similar al de Apple */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Pantalla de la calculadora */
+.pantalla {
+  height: 80px;
+  background-color: #1d1d1d; /* Fondo oscuro para pantalla */
+  color: #32cd32; /* Números verdes similares a los de Apple */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 20px;
+  font-size: 2.5rem;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo general de la calculadora */
+.calculadora {
+  width: 420px;
+  background-color: #e0e0e0; /* Gris claro típico de Apple */
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Contenedor de los botones */
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Estilos generales para todos los botones */
+button {
+  height: 70px;
+  font-size: 1.8rem;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+/* Estilo especial para el botón de borrar */
+button.borrar {
+  background-color: #FF5656; /* Rojo claro */
+  color: #fff;
+}
+
+button.borrar:hover {
+  background-color: #ff4444; /* Un rojo más oscuro al pasar al ratón */
+}
+
+/* Estilo para los botones de operación */
+button.operacion {
+  background-color: #FF9500; /* Naranja para las operaciones */
+  color: #fff;
+}
+
+button.operacion:hover {
+  background-color: #ff8800; /* Naranja más oscuro */
+}
+
+/* Botón de igual destacado */
+button.igual {
+  background-color: #32cd32; /* Verde claro */
+  color: #fff;
+  grid-column: span 2; /* Ocupa dos columnas */
+}
+
+button.igual:hover {
+  background-color: #229a29;
+}
+
+/* Estilo para operaciones destacadas */
+button.operacion-destacada {
+  background-color: #909090; /* Naranja de Apple */
+}
+
+button.operacion-destacada:hover {
+  background-color: #707070; /* Naranja más oscuro */
+}
+
+/* Efecto de presión */
+button:active {
+  transform: scale(0.98);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra más intensa al presionar */
+}
